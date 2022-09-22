@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/logo.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></1i>
+        <li><a href="#about">About</a></1i>
+        <li><a href="#portfolio">Portfolio</a></1i>
+        <li><a href="#contact">Contact</a></1i>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class='header-text'>
+      <p class="intro">Hi, my name is</p>
+      <h1><span>Akeeb Khandakar</span></h1>
+      <p>Aspiring Software Developer</p>
+      <br />
+      <p class="newman">
+        Computer Science student experienced in Front-end  
+        Web <br /> Development, Mobile App Development, and   
+        other fields of <br /> Computer Programming. Seeking to  
+        leverage knowledge <br /> and experience in the Tech Field
+        through internships and to <br />
+        work in a fast paced environment to grow skills.
+        <br />
+        <br />
+        If you think that I might be the right fit for a role, feel free to reach out!
+      </p>
+    </div>
+    <a href="images/Computer_Science_Resume.pdf" download class="btn btn2">Download Resume</a>
+  </div>
+</div>
+
+
+<!---------About-------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          I continuously follow my passion and interests by working on personal and group projects, 
+          participating in hackathons, and joining fellowships programs where i can learn from my peers and mentors. <br />
+          As part of my College's coding club(Code Resolve), I also spend time exploring different career fields related to 
+          Computer Science, socializing/networking with fellow club members, and helping peers with the technical issues they may be facing.<br />
+          I try my best to manage my time and to work both effectively and efficiently on the things I do. <br />
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Languages:</span><br>Python(Flask)<br>Java<br>JavaScript(jQuery, React)<br>SQL<br>PHP<br>HTML/CSS<br>C++<br>Swift</li>
+            <li><span>Technologies:</span><br>MySQL<br>Visual Studio<br>PyCharm<br>Eclipse<br>IntelliJ<br>XCode<br>Microsoft Office (Word, Excel,
+              PowerPoint)<br>Google Suite Applications (Docs, Slides, Sheets, Forms)</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Fellow at CodePath's Mobile App Design Program &nbsp; Remote &nbsp; February-May 2022</span><br>
+              &#183;
+              Collaborated with other Software Engineers to work on group projects. Demonstrated ability to
+              evaluate and receive feedback from mentors and peers. Gained mentorship experience with
+              industry professionals.<br>
+              &#183;
+              Learned and built fully functional Mobile Applications such as a user-friendly app that stores
+              user’s data and creates custom animations and styles.<br>
+              &#183; 
+              Worked alone and in teams to solve technical problems. Achieved honors in the program.
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>CUNY Queens College</span><br>Computer Science B.A. <br> August 2020-May 2024<br>GPA: 3.6</li>
+            <li><span>Relevant Courses: </span><br>Data Structures<br>Object-Oriented Programming in C++ and Java<br>Internet and Web
+              Technologies<br>Computer Architecture<br>Computer Org & Assembly Lang<br>Principles of Programming Lang<br>Theory of Computation<br>Discrete Math<br>Discrete Structures<br>Calculus(I-III)<br>Linear Algebra</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---------Portfolio-------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <h2 class="brief">Here are some of the projects that I've done in various programming languages.</h2>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/portr1.png">
+        <div class="layer">
+          <h3>Text Parser</h3>
+          <p>Web-Based Parser of literary texts that also reports on the word frequencies of the texts being parsed.</p>
+          <a href="https://github.com/akeeb2002/Text-Parser"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/crud 2.png">
+        <div class="layer">
+          <h3>Online Store</h3>
+          <p>Online Store where one can perform CRUD operations to store structured data into a table.</p>
+          <a href="https://github.com/akeeb2002/CRUD-Store"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/port3.jpg">
+        <div class="layer">
+          <h3>Photo Manipulation</h3>
+          <p>Python used to photoshop pictures. Features include adjusting brightness and contrast, adding blur, and detecting edges!</p>
+          <a href="https://github.com/akeeb2002/Photo-Manipulation"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+
+<!---------Contact---------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-regular fa-paper-plane"></i>Email: akeebkhandaker@gmail.com</p>
+        <p><i class="fa-solid fa-earth-americas"></i>Languages: English, Bengali</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/akeebkhandakar/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/akeeb2002"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="images/Computer_Science_Resume.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"> 
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright &copy;	Akeeb <i class="fa-solid fa-heart"></i> Made by Akeeb Khandakar <i class="fa-solid fa-laptop"></i></p>
+  </div>
+</div>
+
+
+
+
+
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+</script>
+
+
+
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxDzbs1RtBQY4Nvbym02ClOKSlfVlDQvlQgUWZZ2ZiYJWaK_XWRxaIDudcx32_-xy6TUg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
+
+
+
