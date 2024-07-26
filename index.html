@@ -1,234 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio Website</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-
-<div id="header">
-  <div class="container">
-    <nav>
-      <img src="images/logo.png" class="logo">
-      <ul id="sidemenu">
-        <li><a href="#header">Home</a></1i>
-        <li><a href="#about">About</a></1i>
-        <li><a href="#portfolio">Portfolio</a></1i>
-        <li><a href="#contact">Contact</a></1i>
-        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-      </ul>
-      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
-    <div class='header-text'>
-      <p class="intro">Hi, my name is</p>
-      <h1><span>Akeeb Khandakar</span></h1>
-      <p>Aspiring Software Developer</p>
-      <br />
-      <p class="newman">
-        Computer Science student experienced in Front-end  
-        Web <br /> Development, Mobile App Development, and   
-        other fields of <br /> Computer Programming. Seeking to  
-        leverage knowledge <br /> and experience in the Tech Field
-        through internships and to <br />
-        work in a fast paced environment to grow skills.
-        <br />
-        <br />
-        If you think that I might be the right fit for a role, feel free to reach out!
-      </p>
-    </div>
-    <a href="images/New Akeeb_Khandakar_Resume.pdf" download class="btn btn2">Download Resume</a>
-  </div>
-</div>
-
-
-<!---------About-------->
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="images/user.png">
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">About Me</h1>
-        <p>
-          I continuously follow my passion and interests by working on personal and group projects, 
-          participating in hackathons, and joining fellowships programs where i can learn from my peers and mentors. <br />
-          As part of my College's coding club(Code Resolve), I also spend time exploring different career fields related to 
-          Computer Science, socializing/networking with fellow club members, and helping peers with the technical issues they may be facing.<br />
-          I try my best to manage my time and to work both effectively and efficiently on the things I do. <br />
-        </p>
-
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
-        </div>
-        <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li><span>Languages:</span><br>Python(Flask)<br>Java<br>JavaScript(jQuery, React)<br>SQL<br>PHP<br>HTML/CSS<br>C++<br>Swift</li>
-            <li><span>Technologies:</span><br>MySQL<br>Visual Studio<br>PyCharm<br>Eclipse<br>IntelliJ<br>XCode<br>Microsoft Office (Word, Excel,
-              PowerPoint)<br>Google Suite Applications (Docs, Slides, Sheets, Forms)</li>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1><span>Akeeb Khandakar</span></h1>
+          <p>Aspiring Software Developer</p>
+          <br />
+          <p class="newman">
+            I recently graduated with a Bachelor's degree in Computer Science
+            from CUNY Queens College. I have hands-on experience in software
+            development through various internships, fellowships, and personal
+            projects. My expertise includes front-end web development, mobile
+            app development, and backend systems. I have successfully developed
+            scalable solutions that improved efficiency and reliability for the
+            organizations I worked with. My technical skills span across
+            multiple programming languages and technologies including Python,
+            Java, SQL, JavaScript, React, and more. I'm passionate about
+            leveraging my knowledge and experience in fast-paced environments to
+            grow my skills and contribute to innovative projects.
+            <br />
+            If you think that I might be the right fit for a role, feel free to
+            reach out!
+          </p>
         </div>
-        <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>Fellow at CodePath's Mobile App Design Program &nbsp; Remote &nbsp; February-May 2022</span><br>
-              &#183;
-              Collaborated with other Software Engineers to work on group projects. Demonstrated ability to
-              evaluate and receive feedback from mentors and peers. Gained mentorship experience with
-              industry professionals.<br>
-              &#183;
-              Learned and built fully functional Mobile Applications such as a user-friendly app that stores
-              user’s data and creates custom animations and styles.<br>
-              &#183; 
-              Worked alone and in teams to solve technical problems. Achieved honors in the program.
-            </li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>CUNY Queens College</span><br>Computer Science B.A. <br> August 2020-May 2024<br>GPA: 3.6</li>
-            <li><span>Relevant Courses: </span><br>Data Structures<br>Object-Oriented Programming in C++ and Java<br>Internet and Web
-              Technologies<br>Computer Architecture<br>Computer Org & Assembly Lang<br>Principles of Programming Lang<br>Theory of Computation<br>Discrete Math<br>Discrete Structures<br>Calculus(I-III)<br>Linear Algebra</li>
-          </ul>
+        <a href="images/NewAkeeb_Resume.pdf" download class="btn btn2"
+          >Download Resume</a
+        >
+      </div>
+    </div>
+
+    <!---------About-------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am passionate about technology and continuously seek to expand
+              my knowledge through personal and collaborative projects,
+              hackathons, and fellowship programs, where I gain insights from
+              peers and mentors. I strive to manage my time effectively and work
+              efficiently, ensuring high-quality results in all my endeavors.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('leadership')">
+                Leadership
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li>
+                  <span
+                    >Software Engineer Intern | Tech Incubator at Queens College
+                    (TIQC) &nbsp; Flushing, NY &nbsp; Feb 2023 – May 2023</span
+                  ><br />
+                  &#183; Led Python backend development for E-commerce startup,
+                  automating API interactions and database updates in real-time,
+                  improving data reliability & increasing revenue by 20%.<br />
+                  &#183; Designed scalable algorithms for diverse data formats,
+                  enhancing ETL pipeline efficiency by 30% & operational
+                  efficiency by 15%.<br />
+                  &#183; Coordinated QA, unit testing, & integration with
+                  supplier APIs alongside 2 interns, reducing data
+                  inconsistencies across 5+ relations & improving data integrity
+                  by 25%.<br />
+                  &#183; Authored comprehensive documentation & delivered
+                  technical solutions, ensuring knowledge transfer & project
+                  clarity through presentations to company heads.
+                </li>
+                <li>
+                  <span
+                    >Software Engineer Intern | KLevel1 &nbsp; New York, NY
+                    &nbsp; Apr 2023</span
+                  ><br />
+                  &#183; Collaborated with a team of 10 engineers using Agile
+                  practices to develop MVPs, boosting productivity by 25%.<br />
+                  &#183; Developed a Python AI chatbot using OpenAI GPT models,
+                  achieving 90% response accuracy.<br />
+                  &#183; Transformed data sources into vectors for LLM
+                  integration, enabling JSON response generation.<br />
+                  &#183; Created PHP text parser for in-depth analysis, managing
+                  10,000+ word texts with MySQL integration, prioritizing
+                  scalability & documentation.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="leadership">
+              <ul>
+                <li>
+                  <span
+                    >Tech Fellow | BASTA &nbsp; New York, NY &nbsp; Jan 2024 –
+                    Present</span
+                  ><br />
+                  &#183; Leading technical workshops and mentoring junior
+                  fellows on coding best practices.<br />
+                  &#183; Organizing events and networking opportunities for
+                  fellows to connect with industry professionals.<br />
+                  &#183; Collaborating with a diverse team to develop
+                  educational materials and resources.
+                </li>
+                <li>
+                  <span
+                    >Google Software Engineering Mentee | Google &nbsp; Remote
+                    &nbsp; Jul 2023 – Sep 2023</span
+                  ><br />
+                  &#183; Participated in a rigorous mentorship program focused
+                  on software engineering skills.<br />
+                  &#183; Completed various coding projects and received feedback
+                  from experienced Google engineers.<br />
+                  &#183; Improved technical and soft skills through structured
+                  learning and real-world problem solving.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul style="display: flex; flex-wrap: wrap; gap: 20px">
+                <li>
+                  <span>Languages:</span><br />
+                  Python<br />
+                  Java<br />
+                  JavaScript<br />
+                  SQL<br />
+                  PHP<br />
+                  HTML/CSS<br />
+                  C++<br />
+                  Swift
+                </li>
+                <li>
+                  <span>Technologies:</span><br />
+                  Git<br />
+                  MySQL<br />
+                  Oracle<br />
+                  MongoDB<br />
+                  Postman<br />
+                  Spring Boot<br />
+                  Django<br />
+                  pandas<br />
+                  NumPy<br />
+                  AWS<br />
+                  React<br />
+                  Next.js<br />
+                  TailwindCSS<br />
+                  Typescript<br />
+                  Node.js<br />
+                  Prisma<br />
+                  Clerk<br />
+                  Socket.io<br />
+                  ShadcnUI<br />
+                  Microsoft Office (Word, Excel, PowerPoint)<br />
+                  Google Suite Applications (Docs, Slides, Sheets, Forms)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>CUNY Queens College</span><br />
+                  Computer Science B.A.<br />
+                  January 2024<br />
+                  GPA: 3.5/4.0
+                </li>
+                <li>
+                  <span>Relevant Courses: </span><br />
+                  Data Structures<br />
+                  Algorithms<br />
+                  Software Engineering<br />
+                  Database Systems<br />
+                  Operating Systems<br />
+                  Internet and Web Technologies (Networking)<br />
+                  Object-Oriented Programming in C++ and Java<br />
+                  Calculus<br />
+                  Linear Algebra<br />
+                  Probability & Statistics
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-
-<!---------Portfolio-------->
-<div id="portfolio">
-  <div class="container">
-    <h1 class="sub-title">My Work</h1>
-    <h2 class="brief">Here are some of the projects that I've done in various programming languages.</h2>
-    <div class="work-list">
-      <div class="work">
-        <img src="images/portr1.png">
-        <div class="layer">
-          <h3>Text Parser</h3>
-          <p>Web-Based Parser of literary texts that also reports on the word frequencies of the texts being parsed.</p>
-          <a href="https://github.com/akeeb2002/Text-Parser"><i class="fa-brands fa-github"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/crud 2.png">
-        <div class="layer">
-          <h3>Online Store</h3>
-          <p>Online Store where one can perform CRUD operations to store structured data into a table.</p>
-          <a href="https://github.com/akeeb2002/CRUD-Store"><i class="fa-brands fa-github"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/port3.jpg">
-        <div class="layer">
-          <h3>Photo Manipulation</h3>
-          <p>Python used to photoshop pictures. Features include adjusting brightness and contrast, adding blur, and detecting edges!</p>
-          <a href="https://github.com/akeeb2002/Photo-Manipulation"><i class="fa-brands fa-github"></i></a>
+    <!---------Portfolio-------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <h2 class="brief">
+          Here are some of the projects that I've done in various programming
+          languages.
+        </h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/port1.png" />
+            <div class="layer">
+              <h3>CommuniHub</h3>
+              <p>
+                Social platform promoting community engagement and
+                collaboration.
+              </p>
+              <a href="https://github.com/akeeb2002/CommuniHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/doc1.png" />
+            <div class="layer">
+              <h3>Health Advisor AI</h3>
+              <p>
+                Medical chatbot that responds to a wide range of medical
+                queries.
+              </p>
+              <a href="https://github.com/akeeb2002/Health-Advisor-AI"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/dp1.png" />
+            <div class="layer">
+              <h3>Movie Review App</h3>
+              <p>
+                Full-stack movie review application enabling users to browse and
+                review movies.
+              </p>
+              <a href="https://github.com/akeeb2002/Movie-Review-App"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/portr1.png" />
+            <div class="layer">
+              <h3>Text Parser</h3>
+              <p>
+                Web-Based Parser that reports on the word frequencies of the
+                texts being parsed.
+              </p>
+              <a href="https://github.com/akeeb2002/Text-Parser"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <a href="#" class="btn">See More</a>
-  </div>
-</div>
 
-
-<!---------Contact---------->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fa-regular fa-paper-plane"></i>Email: akeebkhandaker@gmail.com</p>
-        <p><i class="fa-solid fa-earth-americas"></i>Languages: English, Bengali</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/akeebkhandakar/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/akeeb2002"><i class="fa-brands fa-github"></i></a>
+    <!---------Contact-------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>akeebkhandakar@gmail.com
+            </p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/akeebkhandakar/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/akeeb2002"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="images/Computer_Science_Resume_1.pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <a href="images/Computer_Science_Resume_1.pdf" download class="btn btn2">Download Resume</a>
-      </div>
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-        <span id="msg"> 
-        </span>
       </div>
     </div>
-  </div>
-  <div class="copyright">
-    <p>Copyright &copy;	Akeeb <i class="fa-solid fa-heart"></i> Made by Akeeb Khandakar <i class="fa-solid fa-laptop"></i></p>
-  </div>
-</div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz1T9r2BZZ_4plPULwzmuUyymShjUy9pgOvwDWok6IUrEHMBvXDR7OubGQsmSwaVxPvLg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
 
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
 
-<script>
+      var sidemenu = document.getElementById("sidemenu");
 
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
 
-  function opentab(tabname){
-    for(tablink of tablinks){
-      tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-      tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-  }
-
-</script>
-
-
-
-<script>
-
-  var sidemenu = document.getElementById("sidemenu");
-
-  function openmenu(){
-    sidemenu.style.right = "0";
-  }
-  function closemenu(){
-    sidemenu.style.right = "-200px";
-  }
-
-</script>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxDzbs1RtBQY4Nvbym02ClOKSlfVlDQvlQgUWZZ2ZiYJWaK_XWRxaIDudcx32_-xy6TUg/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message Sent Successfully!"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
-
-</body>
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
-
-
-
